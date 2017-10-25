@@ -1,0 +1,89 @@
+body {
+    font-family: 'Slabo 27px', serif;
+}
+
+.heading {
+    font-family: 'Playfair Display', serif;
+}
+
+/* index page */
+#landing {
+    background-image:url(../images/london.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;    
+}
+
+.landing-header {
+    margin-top: 75px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.landing-header > h1 {
+    font-size: 3.5em;
+}
+
+#feed-link {
+    width: 40%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 1.6em;
+    border-radius: 2px;
+    background-color: #333333;
+    border: 2px solid #333333;
+    color: #db414e;
+}
+
+#feed-link:hover {
+    background-color: rgba(0,0,0,0.7);
+    color: #ffffff;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+/* index page */
+
+/* navbar */
+nav {
+    margin: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #000000;
+}
+
+.navbar-inverse {
+    background-color: #333333;
+}
+
+#nav-brand {
+    font-size: 2.5em;
+    padding-left: 50px;
+}
+
+#nav-brand:hover {
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.navbar-right {
+    padding-right: 50px;
+}
+
+.navbar-right > li > a {
+    font-size: 1.3em;
+}
+
+.navbar-right > li > a:hover {
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+/* navbar */
+
+/* feed */
+
+/* feed */

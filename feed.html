@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>NEWSFEED</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/newspaper.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Slabo+27px" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body onload="makeGetRequests()">
+    <!-- navbar -->
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand heading" href="index.html" id="nav-brand">WorldNews</a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="feed.html">Top</a>
+            </li>
+            <li>
+                <a href="sports.html">Sports</a>
+            </li>
+            <li>
+                <a href="tech.html">Technology</a>
+            </li>
+            <li>
+                <a href="social.html">Social and Entertainment</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- navbar -->
+
+    <!--News Feed-->
+    <div class="container-fluid">
+        <!--BBC NEWS-->
+        <div class="row">
+            <div class="text-center">
+                <h2 class="heading">
+                    BBC NEWS
+                </h2>
+                <button class="btn btn-default" id="button">Hey There</button>
+                <br><br>
+                <p></p>
+            </div>
+            <!--BBC NEWS-->
+        </div>
+        <!--News Feed-->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#button").click(function () {
+                    $("p").load("https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=52f874c8882b47449b9df93b2c352899");
+                });
+            });
+        </script>
+</body>
+
+</html>
